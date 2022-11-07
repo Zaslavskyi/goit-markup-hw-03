@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Головна</title>
 </head>
@@ -31,7 +31,7 @@
     </header>
     <main>
         <section class="order">
-            <div class="container container-order">
+            <div class="container">
         <h1 class="desigion">Ефективні рішення для <br> вашого бізнесу</h1>
             <div class="container-button">
         <button type="button" title="Замовити послугу" class="button-push">Замовити послугу </button>
@@ -49,72 +49,80 @@
               </ul>
             </div>
         </section>
-        <section>
+        <section class="work section">
             <div class="container">
-            <h2 class="work">
+            <h2 class="title">
                 Чим ми займаємося
             </h2>
             <ul class="working">
-               <li class="working-foto"><img src="./images/img.jpg" alt="Пишемо код" width="370"></li>
-               <li class="working-foto"><img src="./images/img6.jpg" alt="Адаптуємо під телефон" width="370"></li>
-               <li class="working-foto"><img src="./images/img2.jpg" alt="Граємо на планшеті в кубіки" width="370"> </li>
+               <li class="working-foto"><img src="./images/img.jpg" alt="Пишемо код" width="370" class="pic"></li>
+               <li class="working-foto"><img src="./images/img6.jpg" alt="Адаптуємо під телефон" width="370" class="pic"></li>
+               <li class="working-foto"><img src="./images/img2.jpg" alt="Граємо на планшеті в кубіки" width="370" class="pic"> </li>
             </ul>
             </div>
         </section>    
-        <section class="team">
+        <section class="team section">
             <div class="container container-team">
-            <h2 class="work">
+            <h2 class="title">
                 Наша команда
             </h2>
             <ul class="team-list">
                 <li class="team-list-item">
-                    <img src="./images/img3.jpg" alt="Ігор Дем'яненко" width="270" class="foto">
+                    <img src="./images/img3.jpg" alt="Ігор Дем'яненко" width="270" class="pic foto">
+                    <div class="team-info">
                     <h3 class="name">Ігор Дем'яненко</h3>
                     <p lang="en" class="prof">
                         Product Designer
                     </p>
+                    </div>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/img4.jpg" alt="Ольга Рєпіна" width="270" class="foto">
+                    <img src="./images/img4.jpg" alt="Ольга Рєпіна" width="270" class="pic foto">
+                    <div class="team-info">
                     <h3 class="name">
                         Ольга Рєпіна
                     </h3>
                     <p lang="en" class="prof">
                         Frontend Developer
                     </p>
+                    </div>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/img5.jpg" alt="Микола Тарасов" width="270" class="foto">
+                    <img src="./images/img5.jpg" alt="Микола Тарасов" width="270" class="pic foto">
+                    <div class="team-info">
                     <h3 class="name">Микола Тарасов</h3>
                     <p lang="en" class="prof">
                         Marketing
                     </p>
+                    </div>
                 </li>
                 <li class="team-list-item">
-                    <img src="./images/img1.jpg" alt="Михайло Єрмаков" width="270" class="foto">
+                    <img src="./images/img1.jpg" alt="Михайло Єрмаков" width="270" class="pic foto">
+                    <div class="team-info">
                     <h3 class="name">Михайло Єрмаков</h3>
                     <p lang="en" class="prof">
                         UI Designer
                     </p>
+                    </div>
                 </li>
             </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container container-footer">
-            <a href="#" title="Головна" target="_blank" class="container-footer-links-logo">
+        <div class="container">
+            <a href="#" title="Головна" target="_blank" class="container-footer-links-logo"> 
                 <span class="logo-beg"> 
                     Web
                 </span>
                 <span class="logo-end-down">
                     Studio
                 </span>
-            </a>   
+                </a>
             <ul class="container-footer-links">
-                <li> <address class="address "> м. Київ, пр-т Лесі Українки, 26</address></li>
-                <li><a href="mailto:info@devstudio.com" title="Надіслати листа" class="footer-link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" title="Зателефонувати" class="footer-link">+38 096 111 11 11</a></li>
+                <li class="footer-list"> <address class="address "> м. Київ, пр-т Лесі Українки, 26</address></li>
+                <li class="footer-list"><a href="mailto:info@devstudio.com" title="Надіслати листа" class="footer-link">info@devstudio.com</a></li>
+                <li class="footer-list"><a href="tel:+380961111111" title="Зателефонувати" class="footer-link">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </footer>
