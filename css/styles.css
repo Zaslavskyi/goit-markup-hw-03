@@ -276,13 +276,13 @@ button {
 }
 
 .advantage {
-    display: flex;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.1428;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--advantage-color);
+        margin-bottom: 10px;
        
 }
 
@@ -319,7 +319,6 @@ button {
 }
 
 .title {
-        display: flex;
         justify-content: center;
         font-weight: 700;
         font-size: 36px;
@@ -511,6 +510,7 @@ button {
 
 .filter-border {
         background: #FFFFFF;
+        flex-basis: calc((100% - 60px) / 3);
 }
 
     .filter-work {
