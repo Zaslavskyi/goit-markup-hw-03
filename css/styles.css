@@ -103,8 +103,9 @@ button {
 .container-heder {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 0;
+    
     
 }
 
@@ -140,7 +141,10 @@ button {
 
 
 .links {
+    display: block;
     color: var(--links);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .links-conact:hover {
@@ -171,8 +175,7 @@ button {
     display: flex;
     gap: 50px;
     margin-left: 93px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+ 
     
 
 }
@@ -210,7 +213,7 @@ button {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--desigion-color);
-        margin-bottom: 200px;
+        margin-bottom: 30px;
        
 }
 
@@ -286,13 +289,12 @@ button {
 .container-advantage-list {
     display: flex;
     justify-content: space-between;
-    
     gap: 30px;
-    padding-top: 94px;
-    margin: 0;
-    flex-basis: calc((100% - 90px) / 4);
-    margin-bottom: 118px;
+    
+}
 
+.advantage-list {
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 
@@ -325,8 +327,8 @@ button {
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--work-color);
-        padding-top: 0;
-        padding-bottom: 50px;
+        margin-top: 0;
+        margin-bottom: 50px;
        
 }
 
@@ -368,11 +370,14 @@ button {
 
 .team-list-item {
     background: var(--team-list-background);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
+/*
 .foto {
-    padding-bottom: 30px;
+    
 }
+*/
 
 .team-info {
     padding-top: 30px;
@@ -409,7 +414,7 @@ button {
 
 
 .container-footer-links-logo {
-    display: flex;
+    display: inline-block;
     justify-content: flex-start;
     margin-bottom: 20px;
     
@@ -449,11 +454,12 @@ button {
     color: var(--links-hover)
 }
 
+/*
 .container-filter {
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;   
 }
+*/
 
 .footer-list:not(:last-child) {
     margin-bottom: 9px;
@@ -463,6 +469,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-bottom: 50px;
     
 }
 
@@ -500,12 +507,10 @@ button {
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--filter-color);
-        padding-top: 35px;  
     }
 
 .filter-border {
         background: #FFFFFF;
-        border: 1px solid #EEEEEE;
 }
 
     .filter-work {
@@ -528,4 +533,7 @@ button {
 
 .portfolio-title {
     padding: 20px 24px 20px 24px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
